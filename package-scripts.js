@@ -13,9 +13,5 @@ module.exports = {
         'pbcopy < build/index.js'
       ),
     },
-    prettier: {
-      description: 'run prettier on files',
-      default: 'prettier-eslint "src/**/*.js" --write --list-different',
-    },
   },
 };
