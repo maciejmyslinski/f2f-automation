@@ -9,7 +9,7 @@ module.exports = {
       description: 'delete the build directory and run all builds',
       default: series(
         rimraf('build'),
-        'rollup --config',
+        'rollup --config --watch',
         'pbcopy < build/index.js'
       ),
     },

@@ -33,4 +33,8 @@ export default {
       verbose: true,
     }),
   ],
+  watch: {
+    include: 'src/**',
+    exclude: 'node_modules/**',
+  },
 };
