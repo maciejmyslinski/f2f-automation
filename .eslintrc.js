@@ -7,6 +7,12 @@ module.exports = {
   },
   rules: {
     'import/prefer-default-export': 'off',
-    'no-unused-vars': ['error', { varsIgnorePattern: 'test|doGet' }],
+    'no-unused-vars': [
+      'error',
+      {
+        varsIgnorePattern:
+          'test|doGet|sendFeedbackReminderToMe|sendFeedbackReminder',
+      },
+    ],
   },
 };

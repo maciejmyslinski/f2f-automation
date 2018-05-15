@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <base target="_top">
+  </head>
+  <body>
+    <p>Howdy!</p>
+    <p>
+      <? if (remainingDays === 1) { ?>
+        Tomorrow
+      <? } else if (isLastCall) { ?>
+        Next Monday
+      <? } else { ?>
+        In <?= remainingDays ?> days
+      <? } ?>
+      me and <?= firstName ?> are having f2f.<br>
+      Because you cooperated recently, please <b><a href="<?= formUrl ?>">fill this short feedback form</a></b>.
+      I value honesty more than 'being nice'.
+    </p>
+    <p>If you don't have any feedback about Sebastian, submit an empty form so I don't bother you with reminders.</p>
+    <p>Thanks for your valuable time!</p>
+    <img src="https://media.giphy.com/media/3o6fJ9JSfrj5Pp2iwo/giphy-downsized.gif" width="480" height="270" frameBorder="0">
+    <p>
+      Maciej Myśliński<br>
+      Frontend Developer & Team Leader at <a href="https://netguru.co">Netguru</a>
+    </p>
+  </body>
+</html>
+
+
