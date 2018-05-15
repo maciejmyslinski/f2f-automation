@@ -10,7 +10,8 @@ function getAllEmails() {
     .offset(3, 0, allReminderData.getNumRows() - 3, 1)
     .getValues()
     .map(value => value[0])
-    .filter(value => value.length > 0);
+    .filter(value => value.length > 0)
+    .reduce((acc, value) => [...acc, ...value.split(', ')], []); // allow multiple emails in one cell
 }
 
 function getConnectedForm() {
