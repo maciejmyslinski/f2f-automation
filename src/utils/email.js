@@ -1,4 +1,4 @@
-import { isLastCall, getRemainingDays } from './dates';
+import { isLastCall, getRemainingDays, daysUntilDeadline } from './dates';
 import { getConnectedFormUrl } from './getConnectedFormUrl';
 
 function getFirstName() {
@@ -32,5 +32,7 @@ export function getEmailTitle() {
   if (isLastCall()) {
     return `[LAST CHANCE]: ${getFirstName()} ${getLastName()} – Feedback Request, today EOD`;
   }
-  return `${getFirstName()} ${getLastName()} – Feedback Request, closes in ${getRemainingDays()} days`;
+  return `${getFirstName()} ${getLastName()} – Feedback Request, closes in ${daysUntilDeadline()} ${
+    daysUntilDeadline() === 1 ? 'day' : 'days'
+  }`;
 }
