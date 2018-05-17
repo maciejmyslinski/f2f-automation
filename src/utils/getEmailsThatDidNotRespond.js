@@ -7,7 +7,7 @@ function getAllEmails() {
     .getDataRange();
 
   return allReminderData
-    .offset(3, 0, allReminderData.getNumRows() - 3, 1)
+    .offset(4, 0, allReminderData.getNumRows() - 4, 1)
     .getValues()
     .map(value => value[0])
     .filter(value => value.length > 0)
