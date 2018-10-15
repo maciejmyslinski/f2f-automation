@@ -1,6 +1,6 @@
 ## Requirements
 ```bash
-yarn global add clasp
+yarn global add @google/clasp
 ```
 
 ## Roadmap

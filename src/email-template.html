@@ -1,30 +1,37 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <base target="_top">
-  </head>
-  <body>
-    <p>Howdy!</p>
-    <p>
-      <? if (remainingDays === 1) { ?>
-        Tomorrow
-      <? } else if (isLastCall) { ?>
-        Next Monday
-      <? } else { ?>
-        In <?= remainingDays ?> days
-      <? } ?>
-      me and <?= firstName ?> are having f2f.<br>
-      I'm sure you want to help him grow and become a better version of himself. Please, do him a little favor and <b><a href="<?= formUrl ?>">fill this short feedback form</a></b>.<br>
-      Your feedback is valuable to him as it helps him to continue growing in the right direction.
-    </p>
-    <p>If you don't have any feedback about <?= firstName ?>, submit an empty form so I don't bother you with reminders.</p>
-    <p>Thanks!</p>
-    <img src="https://media.giphy.com/media/3o6fJ9JSfrj5Pp2iwo/giphy-downsized.gif" width="480" height="270" frameBorder="0">
-    <p>
-      Maciej Myśliński<br>
-      Frontend Developer & Team Leader at <a href="https://netguru.co">Netguru</a>
-    </p>
-  </body>
+
+<head>
+  <base target="_top">
+</head>
+
+<body>
+  <p>Howdy!</p>
+  <p>
+    <? if (remainingDays === 1) { ?>
+    Tomorrow
+    <? } else if (isLastCall) { ?>
+    Next Monday
+    <? } else { ?>
+    In
+    <?= remainingDays ?> days
+    <? } ?>
+    me and
+    <?= firstName ?> are having f2f.<br>
+    I'm sure you want to help him grow and become a better version of himself. Please, do him a little favor and <b><a
+        href="<?= formUrl ?>">fill this short feedback form</a></b>.<br>
+    Your feedback is valuable to him as it helps him to continue growing in the right direction.</p>
+  <p>
+    Remember you can toggl the time spent on giving feedback. It's project <code>netguru</code>, task <code>Feedback</code>
+  </p>
+  <p>If you don't have any feedback about
+    <?= firstName ?>, submit an empty form so I don't bother you with reminders.</p>
+  <p>Thanks!</p>
+  <img src="https://media.giphy.com/media/nEMmyUp4hl1QOzovKh/giphy.gif" width="498" height="372" frameBorder="0">
+  <p>
+    Maciej Myśliński<br>
+    Senior Frontend Developer & Team Leader at <a href="https://netguru.co">Netguru</a>
+  </p>
+</body>
+
 </html>
-
-
